@@ -27,6 +27,10 @@ public class App {
 
             switch (option) {
                 case "1" -> {
+                    System.out.println("Nome do arquivo: ");
+                    String arq = scanner.nextLine();
+                    Path path = Paths.get("pasta", "nomeArguivo");
+
                     System.out.print("Digite o texto: ");
                     String text = scanner.nextLine();
                     FileManager.write(text + System.lineSeparator(), FILE_PATH);
